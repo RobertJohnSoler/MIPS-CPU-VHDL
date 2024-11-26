@@ -1,0 +1,27 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/home/groskows1/RCA/RCA.srcs/sources_1/new/RCA32.vhd,1669680105,vhdl,,,,rca32,,,,,,,,
+/home/groskows1/RCA/RCA.srcs/sources_1/new/RCA4.vhd,1669679882,vhdl,,,,rca4,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sim_1/new/RISC_SIMULATION.vhd,1669569862,vhdl,,,,risc_simulation,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd,1669684589,vhdl,,,,alu32,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd,1669681043,vhdl,,,,alu1,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1_MB.vhd,1669599616,vhdl,,,,alu1_mb,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/ALUControl.vhd,1669599049,vhdl,,,,alucontrol,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/Adder.vhd,1669603533,vhdl,,,,adder,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/Control.vhd,1669598621,vhdl,,,,control,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/Data_Memory.vhd,1669608279,vhdl,,,,datamemory,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/EX_MEM_Buffer.vhd,1669604249,vhdl,,,,ex_mem_buffer,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/FA1.vhd,1669684453,vhdl,,,,fa1,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/ID_EX_Buffer.vhd,1669604070,vhdl,,,,id_ex_buffer,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/IF_ID_Buffer.vhd,1669604018,vhdl,,,,if_id_buffer,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/InstrMEM.vhd,1669684386,vhdl,,,,instrmem,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/MEM_WB_Buffer.vhd,1669604495,vhdl,,,,mem_wb_buffer,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/MUX2_32.vhd,1669603169,vhdl,,,,mux2_32,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/MUX2_5.vhd,1669603107,vhdl,,,,mux2_5,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/MUX4_32.vhd,1669683300,vhdl,,,,mux4_32,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/PC.vhd,1669603325,vhdl,,,,pc,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd,1669674765,vhdl,,,,risc,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/RegFile.vhd,1669679547,vhdl,,,,regfile,,,,,,,,
+/home/groskows1/RISC/RISC.srcs/sources_1/new/SignExtender.vhd,1669607920,vhdl,,,,signextender,,,,,,,,

@@ -1,0 +1,67 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity RegFile is
+    port (readReg1 : in std_logic_vector (4 downto 0);
+          readReg2 : in std_logic_vector (4 downto 0);
+          writeReg : in std_logic_vector (4 downto 0);
+          writeData : in std_logic_vector (31 downto 0);
+          regWrite, clk : in std_logic;
+          readData1 : out std_logic_vector (31 downto 0);
+          readData2 : out std_logic_vector (31 downto 0)
+          );
+end RegFile;
+
+architecture Behavioral of RegFile is
+
+    type reg_file_type is array(0 to (2**5)-1) of 
+        std_logic_vector(31 downto 0);
+        
+    signal registArr : reg_file_type := ( x"10000000",  --$zero
+                                          x"01000000",  --$at
+                                          x"00100000",  --$v0
+                                          x"00010000",  --$v1
+                                          x"00001000",  --$a0
+                                          x"00000100",  --$a1
+                                          x"00000010",  --$a2
+                                          x"00000001",  --$a3
+                                          x"ffffffff",  --$t0
+                                          x"00000000",  --$t1
+                                          x"00000000",  --$t2
+                                          x"00000000",  --$t3
+                                          x"00000000",  --$t4
+                                          x"00000000",  --$t5
+                                          x"00000000",  --$t6
+                                          x"00000000",  --$t7
+                                          x"00000000",  --$s0
+                                          x"00000000",  --$s1
+                                          x"00000000",  --$s2
+                                          x"00000000",  --$s3
+                                          x"00000000",  --$s4
+                                          x"00000000",  --$s5
+                                          x"00000000",  --$s6
+                                          x"00000000",  --$s7
+                                          x"00000000",  --$t8
+                                          x"00000000",  --$t9
+                                          x"00000000",  --$k0
+                                          x"ffffffff",  --$k1
+                                          x"00000000",  --$gp
+                                          x"00000000",  --$sp
+                                          x"00000000",  --$fp
+                                          x"00000000"   --$ra
+                                          );
+                                          
+begin
+
+    process(regWrite, clk)
+    begin
+        if (regWrite = '1') and (rising_edge(clk)) then
+            registArr(to_integer(unsigned(writeReg))) <= writeData;
+        end if;
+    end process;
+    
+    readData1 <= registArr(to_integer(unsigned(readReg1)));
+    readData2 <= registArr(to_integer(unsigned(readReg2)));
+    
+end Behavioral;

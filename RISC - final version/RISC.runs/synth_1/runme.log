@@ -1,0 +1,479 @@
+
+*** Running vivado
+    with args -log RISC.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISC.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source RISC.tcl -notrace
+Command: synth_design -top RISC -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-1540] The version limit for your license is '2022.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 238785 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1858.434 ; gain = 215.691 ; free physical = 10781 ; free virtual = 122080
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'RISC' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:27]
+INFO: [Synth 8-3491] module 'PC' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/PC.vhd:5' bound to instance 'pc_register' of component 'PC' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'PC' [/home/groskows1/RISC/RISC.srcs/sources_1/new/PC.vhd:11]
+WARNING: [Synth 8-614] signal 'pcmem' is read in the process but is not in the sensitivity list [/home/groskows1/RISC/RISC.srcs/sources_1/new/PC.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'PC' (1#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/PC.vhd:11]
+INFO: [Synth 8-3491] module 'Adder' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/Adder.vhd:4' bound to instance 'pc_adder' of component 'Adder' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'Adder' [/home/groskows1/RISC/RISC.srcs/sources_1/new/Adder.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'Adder' (2#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/Adder.vhd:10]
+INFO: [Synth 8-3491] module 'InstrMEM' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/InstrMEM.vhd:5' bound to instance 'instruction_memory' of component 'InstrMEM' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'InstrMEM' [/home/groskows1/RISC/RISC.srcs/sources_1/new/InstrMEM.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'InstrMEM' (3#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/InstrMEM.vhd:10]
+INFO: [Synth 8-3491] module 'IF_ID_Buffer' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/IF_ID_Buffer.vhd:4' bound to instance 'first_buffer' of component 'IF_ID_Buffer' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'IF_ID_Buffer' [/home/groskows1/RISC/RISC.srcs/sources_1/new/IF_ID_Buffer.vhd:13]
+WARNING: [Synth 8-6014] Unused sequential element inst_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/IF_ID_Buffer.vhd:19]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/IF_ID_Buffer.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'IF_ID_Buffer' (4#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/IF_ID_Buffer.vhd:13]
+INFO: [Synth 8-3491] module 'RegFile' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/RegFile.vhd:5' bound to instance 'register_file' of component 'RegFile' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RegFile.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (5#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/RegFile.vhd:16]
+INFO: [Synth 8-3491] module 'Control' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/Control.vhd:25' bound to instance 'control_circuit' of component 'Control' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'Control' [/home/groskows1/RISC/RISC.srcs/sources_1/new/Control.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'Control' (6#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/Control.vhd:32]
+INFO: [Synth 8-3491] module 'SignExtender' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/SignExtender.vhd:26' bound to instance 'sign_extender' of component 'SignExtender' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'SignExtender' [/home/groskows1/RISC/RISC.srcs/sources_1/new/SignExtender.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'SignExtender' (7#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/SignExtender.vhd:31]
+INFO: [Synth 8-3491] module 'ID_EX_Buffer' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ID_EX_Buffer.vhd:4' bound to instance 'second_buffer' of component 'ID_EX_Buffer' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'ID_EX_Buffer' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ID_EX_Buffer.vhd:27]
+WARNING: [Synth 8-6014] Unused sequential element WB_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/ID_EX_Buffer.vhd:37]
+WARNING: [Synth 8-6014] Unused sequential element M_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/ID_EX_Buffer.vhd:38]
+WARNING: [Synth 8-6014] Unused sequential element EX_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/ID_EX_Buffer.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/ID_EX_Buffer.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element data1_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/ID_EX_Buffer.vhd:41]
+WARNING: [Synth 8-6014] Unused sequential element data2_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/ID_EX_Buffer.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element signExtend_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/ID_EX_Buffer.vhd:43]
+WARNING: [Synth 8-6014] Unused sequential element inst1_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/ID_EX_Buffer.vhd:44]
+WARNING: [Synth 8-6014] Unused sequential element inst2_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/ID_EX_Buffer.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'ID_EX_Buffer' (8#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/ID_EX_Buffer.vhd:27]
+INFO: [Synth 8-3491] module 'MUX2_32' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/MUX2_32.vhd:25' bound to instance 'mux_1' of component 'MUX2_32' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'MUX2_32' [/home/groskows1/RISC/RISC.srcs/sources_1/new/MUX2_32.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'MUX2_32' (9#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/MUX2_32.vhd:32]
+INFO: [Synth 8-3491] module 'MUX2_5' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/MUX2_5.vhd:25' bound to instance 'mux_2' of component 'MUX2_5' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'MUX2_5' [/home/groskows1/RISC/RISC.srcs/sources_1/new/MUX2_5.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'MUX2_5' (10#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/MUX2_5.vhd:32]
+INFO: [Synth 8-3491] module 'ALUControl' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALUControl.vhd:24' bound to instance 'alu_control' of component 'ALUControl' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'ALUControl' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALUControl.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'ALUControl' (11#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALUControl.vhd:29]
+INFO: [Synth 8-3491] module 'ALU32' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:27' bound to instance 'alu' of component 'ALU32' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'ALU32' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:35]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_0' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'ALU1' (12#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:42]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_1' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:62]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_2' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:63]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_3' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:64]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_4' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:65]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_5' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:66]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_6' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:67]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_7' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:68]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_8' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:69]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_9' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:70]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_10' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:71]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_11' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:72]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_12' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:73]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_13' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:74]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_14' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:75]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_15' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:76]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_16' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:77]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_17' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:78]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_18' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:79]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_19' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:80]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_20' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:81]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_21' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:82]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_22' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:83]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_23' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:84]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_24' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:85]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_25' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:86]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_26' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:87]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_27' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:88]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_28' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:89]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_29' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:90]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu_30' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:91]
+INFO: [Synth 8-3491] module 'ALU1_MB' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1_MB.vhd:34' bound to instance 'alu_31' of component 'ALU1_MB' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'ALU1_MB' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1_MB.vhd:41]
+INFO: [Synth 8-3491] module 'ALU1' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1.vhd:34' bound to instance 'alu' of component 'ALU1' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1_MB.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'ALU1_MB' (13#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU1_MB.vhd:41]
+WARNING: [Synth 8-3848] Net zero in module/entity ALU32 does not have driver. [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'ALU32' (14#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALU.vhd:35]
+INFO: [Synth 8-3491] module 'EX_MEM_Buffer' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/EX_MEM_Buffer.vhd:4' bound to instance 'third_buffer' of component 'EX_MEM_Buffer' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'EX_MEM_Buffer' [/home/groskows1/RISC/RISC.srcs/sources_1/new/EX_MEM_Buffer.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element WB_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/EX_MEM_Buffer.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element M_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/EX_MEM_Buffer.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/EX_MEM_Buffer.vhd:35]
+WARNING: [Synth 8-6014] Unused sequential element zero_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/EX_MEM_Buffer.vhd:36]
+WARNING: [Synth 8-6014] Unused sequential element aluRes_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/EX_MEM_Buffer.vhd:37]
+WARNING: [Synth 8-6014] Unused sequential element data2_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/EX_MEM_Buffer.vhd:38]
+WARNING: [Synth 8-6014] Unused sequential element chinst_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/EX_MEM_Buffer.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'EX_MEM_Buffer' (15#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/EX_MEM_Buffer.vhd:23]
+INFO: [Synth 8-3491] module 'DataMemory' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/Data_Memory.vhd:26' bound to instance 'data_memory' of component 'DataMemory' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [/home/groskows1/RISC/RISC.srcs/sources_1/new/Data_Memory.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (16#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/Data_Memory.vhd:32]
+INFO: [Synth 8-3491] module 'MEM_WB_Buffer' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/MEM_WB_Buffer.vhd:3' bound to instance 'forth_buffer' of component 'MEM_WB_Buffer' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'MEM_WB_Buffer' [/home/groskows1/RISC/RISC.srcs/sources_1/new/MEM_WB_Buffer.vhd:16]
+WARNING: [Synth 8-6014] Unused sequential element WB_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/MEM_WB_Buffer.vhd:24]
+WARNING: [Synth 8-6014] Unused sequential element rdata_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/MEM_WB_Buffer.vhd:25]
+WARNING: [Synth 8-6014] Unused sequential element aluRes_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/MEM_WB_Buffer.vhd:26]
+WARNING: [Synth 8-6014] Unused sequential element chinst_reg was removed.  [/home/groskows1/RISC/RISC.srcs/sources_1/new/MEM_WB_Buffer.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'MEM_WB_Buffer' (17#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/MEM_WB_Buffer.vhd:16]
+INFO: [Synth 8-3491] module 'MUX2_32' declared at '/home/groskows1/RISC/RISC.srcs/sources_1/new/MUX2_32.vhd:25' bound to instance 'mux_3' of component 'MUX2_32' [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'RISC' (18#1) [/home/groskows1/RISC/RISC.srcs/sources_1/new/RISC.vhd:27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[31]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[30]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[29]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[28]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[26]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[25]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[24]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[23]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[22]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[21]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[20]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[19]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[18]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port addr[17]
+WARNING: [Synth 8-3331] design ALU32 has unconnected port zero
+WARNING: [Synth 8-3331] design Adder has unconnected port cin
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1960.227 ; gain = 317.484 ; free physical = 10793 ; free virtual = 122094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1960.227 ; gain = 317.484 ; free physical = 10792 ; free virtual = 122092
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1968.219 ; gain = 325.477 ; free physical = 10791 ; free virtual = 122092
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "registArr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'WB_reg' [/home/groskows1/RISC/RISC.srcs/sources_1/new/Control.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'M_reg' [/home/groskows1/RISC/RISC.srcs/sources_1/new/Control.vhd:40]
+WARNING: [Synth 8-327] inferring latch for variable 'EX_reg' [/home/groskows1/RISC/RISC.srcs/sources_1/new/Control.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'aluOp_reg' [/home/groskows1/RISC/RISC.srcs/sources_1/new/ALUControl.vhd:34]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1968.234 ; gain = 325.492 ; free physical = 10754 ; free virtual = 122055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 67    
++---Registers : 
+	               32 Bit    Registers := 12    
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 67    
+	   8 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 32    
+	   4 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module InstrMEM 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+Module IF_ID_Buffer 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module Control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ID_EX_Buffer 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+Module MUX2_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX2_5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module ALUControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module ALU1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module ALU1_MB 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
+Module EX_MEM_Buffer 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MEM_WB_Buffer 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'first_buffer/ID_PC_reg[31:0]' into 'pc_register/pcmem_reg[31:0]' [/home/groskows1/RISC/RISC.srcs/sources_1/new/IF_ID_Buffer.vhd:22]
+INFO: [Synth 8-3971] The signal "RISC/register_file/registArr_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "RISC/register_file/registArr_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-3332] Sequential element (control_circuit/WB_reg[1]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (control_circuit/WB_reg[0]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (control_circuit/M_reg[2]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (control_circuit/M_reg[1]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (control_circuit/M_reg[0]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (control_circuit/EX_reg[3]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (control_circuit/EX_reg[2]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (control_circuit/EX_reg[1]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (control_circuit/EX_reg[0]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (alu_control/aluOp_reg[3]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (alu_control/aluOp_reg[2]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (alu_control/aluOp_reg[1]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (alu_control/aluOp_reg[0]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (first_buffer/ID_Instruction_reg_rep_bsel[20]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (first_buffer/ID_Instruction_reg_rep_bsel[19]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (first_buffer/ID_Instruction_reg_rep_bsel[18]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (first_buffer/ID_Instruction_reg_rep_bsel[17]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (first_buffer/ID_Instruction_reg_rep_bsel[16]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (first_buffer/ID_Instruction_reg_rep_bsel[25]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (first_buffer/ID_Instruction_reg_rep_bsel[24]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (first_buffer/ID_Instruction_reg_rep_bsel[23]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (first_buffer/ID_Instruction_reg_rep_bsel[22]) is unused and will be removed from module RISC.
+WARNING: [Synth 8-3332] Sequential element (first_buffer/ID_Instruction_reg_rep_bsel[21]) is unused and will be removed from module RISC.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:01:05 . Memory (MB): peak = 2240.012 ; gain = 597.270 ; free physical = 10499 ; free virtual = 121805
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:01:06 . Memory (MB): peak = 2245.953 ; gain = 603.211 ; free physical = 10496 ; free virtual = 121802
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:01:06 . Memory (MB): peak = 2253.957 ; gain = 611.215 ; free physical = 10496 ; free virtual = 121802
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:01:10 . Memory (MB): peak = 2253.961 ; gain = 611.219 ; free physical = 10488 ; free virtual = 121794
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:01:10 . Memory (MB): peak = 2253.961 ; gain = 611.219 ; free physical = 10488 ; free virtual = 121794
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:01:10 . Memory (MB): peak = 2253.961 ; gain = 611.219 ; free physical = 10488 ; free virtual = 121794
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:01:10 . Memory (MB): peak = 2253.961 ; gain = 611.219 ; free physical = 10488 ; free virtual = 121794
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:01:10 . Memory (MB): peak = 2253.961 ; gain = 611.219 ; free physical = 10488 ; free virtual = 121794
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:01:10 . Memory (MB): peak = 2253.961 ; gain = 611.219 ; free physical = 10488 ; free virtual = 121794
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:01:10 . Memory (MB): peak = 2253.961 ; gain = 611.219 ; free physical = 10488 ; free virtual = 121794
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 68 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:01:11 . Memory (MB): peak = 2253.961 ; gain = 611.219 ; free physical = 10488 ; free virtual = 121794
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:01:11 . Memory (MB): peak = 2253.965 ; gain = 611.219 ; free physical = 10489 ; free virtual = 121795
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2253.965 ; gain = 0.000 ; free physical = 10554 ; free virtual = 121860
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2292.773 ; gain = 0.000 ; free physical = 11082 ; free virtual = 122349
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+97 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:01:26 . Memory (MB): peak = 2292.773 ; gain = 685.973 ; free physical = 11218 ; free virtual = 122485
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2292.773 ; gain = 0.000 ; free physical = 11218 ; free virtual = 122485
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/groskows1/RISC/RISC.runs/synth_1/RISC.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RISC_utilization_synth.rpt -pb RISC_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 27 11:04:27 2022...

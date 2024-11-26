@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="RISC_SIMULATION_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="RISC_SIMULATION" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="62901fs"></ZoomEndTime>
+      <Cursor1Time time="61415fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="179"></NameColumnWidth>
+      <ValueColumnWidth column_width="132"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="29" />
+   <wvobject type="logic" fp_name="/RISC_SIMULATION/proc/pc_register/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider499" type="divider">
+      <obj_property name="label">Stage 1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/pc_register/pcout">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pcout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcout[31:0]</obj_property>
+      <obj_property name="label">PC</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/instruction_memory/instr">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+      <obj_property name="label">Instruction</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider500" type="divider">
+      <obj_property name="label">Stage 2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/register_file/readReg1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">readReg1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">readReg1[4:0]</obj_property>
+      <obj_property name="label">Read 1</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/register_file/readReg2">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">readReg2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">readReg2[4:0]</obj_property>
+      <obj_property name="label">Read 2</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/register_file/readData1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">readData1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">readData1[31:0]</obj_property>
+      <obj_property name="label">Data 1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/register_file/readData2">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">readData2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">readData2[31:0]</obj_property>
+      <obj_property name="label">Data 2</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/register_file/registArr">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">registArr[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">registArr[0:31][31:0]</obj_property>
+      <obj_property name="label">Registers</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/register_file/registArr[8]">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[8][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+      <obj_property name="label">t0</obj_property>
+      <obj_property name="CustomSignalColor">#808080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider501" type="divider">
+      <obj_property name="label">Stage 3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/EX_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">EX_1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_1[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">EX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/resmux">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">resmux[4:0]</obj_property>
+      <obj_property name="ObjectShortName">resmux[4:0]</obj_property>
+      <obj_property name="label">Instruction piece</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/alu/op">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">op[0:1]</obj_property>
+      <obj_property name="ObjectShortName">op[0:1]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#A52A2A</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="label">ALU OP (Control)</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/alu_control/aluOp">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">aluOp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">aluOp[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#A52A2A</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="label">ALU OP (ALU Control)</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/alu_control/instr">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">instr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[5:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">Funct (R)</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/alu/a">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a[31:0]</obj_property>
+      <obj_property name="label">ALU IN 1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/alu/b">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b[31:0]</obj_property>
+      <obj_property name="label">ALU IN 2</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/alu/q">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q[31:0]</obj_property>
+      <obj_property name="label">ALU Result</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider502" type="divider">
+      <obj_property name="label">Stage 4</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/M_2">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">M_2[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M_2[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#A52A2A</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">M</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/RES_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">RES_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RES_1[31:0]</obj_property>
+      <obj_property name="label">ALU Result</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/D2_2">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">D2_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">D2_2[31:0]</obj_property>
+      <obj_property name="label">Write Data</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/data_memory/readData">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">readData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">readData[31:0]</obj_property>
+      <obj_property name="label">Read Data</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider506" type="divider">
+      <obj_property name="label">Stage 5</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/WB_3">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">WB_3[1:0]</obj_property>
+      <obj_property name="ObjectShortName">WB_3[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="label">WB</obj_property>
+      <obj_property name="CustomSignalColor">#A52A2A</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/WD">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">WD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WD[31:0]</obj_property>
+      <obj_property name="label">Write Back</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/RISC_SIMULATION/proc/instr_3">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">instr_3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_3[4:0]</obj_property>
+      <obj_property name="label">Address</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

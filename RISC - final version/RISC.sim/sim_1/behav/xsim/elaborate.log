@@ -1,0 +1,38 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /apps/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 80ff0a00a9d0446d87486edbbcdfd74d --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot RISC_SIMULATION_behav xil_defaultlib.RISC_SIMULATION -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.MUX2_32 [mux2_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder [adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.InstrMEM [instrmem_default]
+Compiling architecture behavioral of entity xil_defaultlib.IF_ID_Buffer [if_id_buffer_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegFile [regfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.SignExtender [signextender_default]
+Compiling architecture behavioral of entity xil_defaultlib.ID_EX_Buffer [id_ex_buffer_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX2_5 [mux2_5_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALUControl [alucontrol_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU1 [alu1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA1 [fa1_default]
+Compiling architecture structural of entity xil_defaultlib.RCA4 [rca4_default]
+Compiling architecture structural of entity xil_defaultlib.RCA32 [rca32_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX4_32 [mux4_32_default]
+Compiling architecture structural of entity xil_defaultlib.ALU32 [alu32_default]
+Compiling architecture behavioral of entity xil_defaultlib.EX_MEM_Buffer [ex_mem_buffer_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataMemory [datamemory_default]
+Compiling architecture behavioral of entity xil_defaultlib.MEM_WB_Buffer [mem_wb_buffer_default]
+Compiling architecture structural of entity xil_defaultlib.RISC [risc_default]
+Compiling architecture behavioral of entity xil_defaultlib.risc_simulation
+Built simulation snapshot RISC_SIMULATION_behav

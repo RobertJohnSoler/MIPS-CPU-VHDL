@@ -1,0 +1,27 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RISC.srcs/sources_1/new/ALU.vhd" \
+"../../../../RISC.srcs/sources_1/new/ALU1.vhd" \
+"../../../../RISC.srcs/sources_1/new/ALUControl.vhd" \
+"../../../../RISC.srcs/sources_1/new/Adder.vhd" \
+"../../../../RISC.srcs/sources_1/new/Control.vhd" \
+"../../../../RISC.srcs/sources_1/new/Data_Memory.vhd" \
+"../../../../RISC.srcs/sources_1/new/EX_MEM_Buffer.vhd" \
+"../../../../RISC.srcs/sources_1/new/FA1.vhd" \
+"../../../../RISC.srcs/sources_1/new/ID_EX_Buffer.vhd" \
+"../../../../RISC.srcs/sources_1/new/IF_ID_Buffer.vhd" \
+"../../../../RISC.srcs/sources_1/new/InstrMEM.vhd" \
+"../../../../RISC.srcs/sources_1/new/MEM_WB_Buffer.vhd" \
+"../../../../RISC.srcs/sources_1/new/MUX2_32.vhd" \
+"../../../../RISC.srcs/sources_1/new/MUX2_5.vhd" \
+"../../../../RISC.srcs/sources_1/new/MUX4_32.vhd" \
+"../../../../RISC.srcs/sources_1/new/PC.vhd" \
+"../../../../../RCA/RCA.srcs/sources_1/new/RCA32.vhd" \
+"../../../../../RCA/RCA.srcs/sources_1/new/RCA4.vhd" \
+"../../../../RISC.srcs/sources_1/new/RISC.vhd" \
+"../../../../RISC.srcs/sources_1/new/RegFile.vhd" \
+"../../../../RISC.srcs/sources_1/new/SignExtender.vhd" \
+"../../../../RISC.srcs/sim_1/new/RISC_SIMULATION.vhd" \
+
+# Do not sort compile order
+nosort
